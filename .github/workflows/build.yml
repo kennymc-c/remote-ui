@@ -326,7 +326,7 @@ jobs:
           tar czvf ${{ env.ARTIFACT_NAME }}.tar.gz -C ${GITHUB_WORKSPACE}/${{env.BIN_OUTPUT_PATH }} .
           ls -lah
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         id: upload_artifact
         with:
           name: ${{ env.ARTIFACT_NAME }}
