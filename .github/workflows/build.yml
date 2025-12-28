@@ -98,7 +98,7 @@ jobs:
           tar czvf ${{ env.ARTIFACT_NAME }}.tar.gz -C ${{ env.UC_BIN }} .
           ls -lah
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         id: upload_artifact
         with:
           name: ${{ env.ARTIFACT_NAME }}
